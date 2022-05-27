@@ -17,12 +17,12 @@ public class TestController{
     @Autowired
     TestService testService;
 
-    @RequestMapping( "/home" )
-    public String home(){
-
-        log.info( "home controller" );
-        return "index.html";
-    }
+//    @RequestMapping( "/home" )
+//    public String home(){
+//
+//        log.info( "home controller" );
+//        return "index.html";
+//    }
 
 //    @ResponseBody
 //    @RequestMapping( "/valueTest" )
