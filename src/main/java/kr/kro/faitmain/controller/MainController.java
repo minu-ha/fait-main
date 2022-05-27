@@ -12,7 +12,7 @@ public class MainController{
     public String test(){
 
         log.info( "TEST CONTROLLER" );
-        return "index";
+        return "welcome";
     }
 
     @GetMapping( "/thymeleaf" )
@@ -21,4 +21,6 @@ public class MainController{
         log.info( "THYMELEAF TEST" );
         return "/fragments/exampleLayout";
     }
+
+
 }
