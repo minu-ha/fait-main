@@ -31,6 +31,6 @@ public class UserTestController{
         model.addAttribute( "users" , users );
         model.addAttribute( "today" , new Date() );
         model.addAttribute( "content" , "<div><span style='font-size:20px'>HLW</span></div>" );
-        return "users";
+        return "thymeleaf/users";
     }
 }
