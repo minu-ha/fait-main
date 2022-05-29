@@ -1,6 +1,6 @@
 package kr.kro.faitmain.controller.user;
 
-import kr.kro.faitmain.dto.Join;
+import kr.kro.faitmain.model.dto.Join;
 import kr.kro.faitmain.service.user.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

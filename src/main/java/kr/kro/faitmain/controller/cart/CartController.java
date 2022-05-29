@@ -1,7 +1,7 @@
 package kr.kro.faitmain.controller.cart;
 
-import kr.kro.faitmain.domain.cart.Cart;
-import kr.kro.faitmain.domain.cart.CartList;
+import kr.kro.faitmain.model.domain.cart.Cart;
+import kr.kro.faitmain.model.domain.cart.CartList;
 import kr.kro.faitmain.util.FoodPriceCalc;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

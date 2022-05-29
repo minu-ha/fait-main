@@ -1,10 +1,11 @@
-package kr.kro.faitmain.service.user;
+package kr.kro.faitmain.model.dao.user;
 
 import kr.kro.faitmain.model.dto.Join;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
-@Service
-public interface UserService{
+
+@Repository
+public interface UserDao{
 
     void join( Join join );
 

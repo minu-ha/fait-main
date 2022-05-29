@@ -1,7 +1,7 @@
 package kr.kro.faitmain.service.user;
 
-import kr.kro.faitmain.dao.user.UserDao;
-import kr.kro.faitmain.dto.Join;
+import kr.kro.faitmain.model.dao.user.UserDao;
+import kr.kro.faitmain.model.dto.Join;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

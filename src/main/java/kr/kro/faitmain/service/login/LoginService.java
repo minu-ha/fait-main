@@ -1,6 +1,6 @@
 package kr.kro.faitmain.service.login;
 
-import kr.kro.faitmain.domain.user.User;
+import kr.kro.faitmain.model.domain.user.User;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

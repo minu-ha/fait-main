@@ -1,8 +1,8 @@
 package kr.kro.faitmain.service.store;
 
-import kr.kro.faitmain.dao.store.StoreDao;
-import kr.kro.faitmain.domain.store.Store;
-import kr.kro.faitmain.domain.store.StoreDetail;
+import kr.kro.faitmain.model.dao.store.StoreDao;
+import kr.kro.faitmain.model.domain.store.Store;
+import kr.kro.faitmain.model.domain.store.StoreDetail;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;

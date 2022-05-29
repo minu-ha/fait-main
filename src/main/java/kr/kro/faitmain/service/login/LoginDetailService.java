@@ -1,6 +1,6 @@
 package kr.kro.faitmain.service.login;
 
-import kr.kro.faitmain.domain.user.User;
+import kr.kro.faitmain.model.domain.user.User;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
