@@ -1,8 +1,8 @@
 package kr.kro.faitmain.service.order;
 
-import kr.kro.faitmain.dao.order.OrderList;
-import kr.kro.faitmain.domain.cart.CartList;
-import kr.kro.faitmain.dto.OrderInfo;
+import kr.kro.faitmain.model.dao.order.OrderList;
+import kr.kro.faitmain.model.domain.cart.CartList;
+import kr.kro.faitmain.model.dto.OrderInfo;
 import kr.kro.faitmain.service.login.LoginService;
 import org.springframework.stereotype.Service;
 

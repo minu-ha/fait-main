@@ -1,6 +1,6 @@
 package kr.kro.faitmain.util;
 
-import kr.kro.faitmain.domain.cart.Cart;
+import kr.kro.faitmain.model.domain.cart.Cart;
 
 public class FoodPriceCalc {
 

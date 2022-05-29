@@ -1,18 +1,10 @@
 package kr.kro.faitmain.service.order;
 
-import com.google.gson.Gson;
-import kr.kro.faitmain.dao.admin.AdminDao;
-import kr.kro.faitmain.dao.order.OrderDao;
-import kr.kro.faitmain.dao.order.OrderList;
-import kr.kro.faitmain.domain.cart.Cart;
-import kr.kro.faitmain.domain.cart.CartList;
-import kr.kro.faitmain.domain.order.OrderDetail;
-import kr.kro.faitmain.dto.OrderInfo;
+import kr.kro.faitmain.model.dao.order.OrderList;
+import kr.kro.faitmain.model.domain.cart.CartList;
+import kr.kro.faitmain.model.dto.OrderInfo;
 import kr.kro.faitmain.service.login.LoginService;
-import kr.kro.faitmain.util.UserInfoSessionUpdate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;

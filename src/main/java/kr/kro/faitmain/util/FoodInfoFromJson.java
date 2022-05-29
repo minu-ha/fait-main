@@ -1,7 +1,7 @@
 package kr.kro.faitmain.util;
 
 import com.google.gson.Gson;
-import kr.kro.faitmain.domain.cart.Cart;
+import kr.kro.faitmain.model.domain.cart.Cart;
 
 import java.util.ArrayList;
 import java.util.HashMap;
