@@ -8,9 +8,6 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class TestController{
 
-    @Autowired
-    TestService testService;
-
 //    @RequestMapping( "/home" )
 //    public String home(){
 //
