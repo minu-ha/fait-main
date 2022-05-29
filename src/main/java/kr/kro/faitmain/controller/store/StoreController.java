@@ -13,24 +13,24 @@ import java.util.List;
 @Controller
 public class StoreController{
 
-    @Autowired
-    private StoreService storeService;
-
-    @GetMapping("/store/{category}/{address1}")
-    public String store( @PathVariable int category, @PathVariable int address1, Model model) {
-
-        List< Store > storeList = storeService.storeList(category, address1 / 100);
-        model.addAttribute("storeList", storeList);
-        return "store/store";
-    }
-
-    @GetMapping("/store/detail/{id}")
-    public String storeDetail(@PathVariable long id, Model model) {
-
-        StoreDetail storeDetail = storeService.storeDetail(id);
-
-        model.addAttribute("store", storeDetail);
-
-        return "store/detail";
-    }
+//    @Autowired
+//    private StoreService storeService;
+//
+//    @GetMapping("/store/{category}/{address1}")
+//    public String store( @PathVariable int category, @PathVariable int address1, Model model) {
+//
+//        List< Store > storeList = storeService.storeList(category, address1 / 100);
+//        model.addAttribute("storeList", storeList);
+//        return "store/store";
+//    }
+//
+//    @GetMapping("/store/detail/{id}")
+//    public String storeDetail(@PathVariable long id, Model model) {
+//
+//        StoreDetail storeDetail = storeService.storeDetail(id);
+//
+//        model.addAttribute("store", storeDetail);
+//
+//        return "store/detail";
+//    }
 }
