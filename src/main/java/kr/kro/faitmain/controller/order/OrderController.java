@@ -21,43 +21,43 @@ import java.io.IOException;
 @Controller
 public class OrderController{
 
-    @Autowired
-    private OrderService orderService;
-
-    @GetMapping("/order")
-    public String order(HttpSession session, Model model, @AuthenticationPrincipal LoginService user) {
-
-        CartList cartList = ( CartList ) session.getAttribute("cartList");
-
-        model.addAttribute("cartList", cartList);
-
-        System.out.println(user);
-
-        if (user != null) {
-            model.addAttribute("user", user.getUser());
-        }
-        String orderNum = CreateOrderNum.createOrderNum();
-        model.addAttribute("orderNum", orderNum);
-        return "order/order";
-    }
-
-    @ResponseBody
-    @PostMapping("/order/payment-cash")
-    public ResponseEntity<String> payment( HttpSession session, OrderInfo orderInfo, long totalPrice, @AuthenticationPrincipal LoginService user) throws IOException{
-
-        CartList cartList = (CartList) session.getAttribute("cartList");
-
-        long orderPriceCheck = orderService.orderPriceCheck(cartList);
-
-        System.out.println("계산금액 = " + totalPrice + " 실제 계산해야할 금액 = " + orderPriceCheck );
-
-        if(orderPriceCheck == totalPrice) {
-            orderService.order(cartList, orderInfo, user, session);
-            session.removeAttribute("cartList");
-        }
-
-        return new ResponseEntity<>( HttpStatus.OK);
-    }
+//    @Autowired
+//    private OrderService orderService;
+//
+//    @GetMapping("/order")
+//    public String order(HttpSession session, Model model, @AuthenticationPrincipal LoginService user) {
+//
+//        CartList cartList = ( CartList ) session.getAttribute("cartList");
+//
+//        model.addAttribute("cartList", cartList);
+//
+//        System.out.println(user);
+//
+//        if (user != null) {
+//            model.addAttribute("user", user.getUser());
+//        }
+//        String orderNum = CreateOrderNum.createOrderNum();
+//        model.addAttribute("orderNum", orderNum);
+//        return "order/order";
+//    }
+//
+//    @ResponseBody
+//    @PostMapping("/order/payment-cash")
+//    public ResponseEntity<String> payment( HttpSession session, OrderInfo orderInfo, long totalPrice, @AuthenticationPrincipal LoginService user) throws IOException{
+//
+//        CartList cartList = (CartList) session.getAttribute("cartList");
+//
+//        long orderPriceCheck = orderService.orderPriceCheck(cartList);
+//
+//        System.out.println("계산금액 = " + totalPrice + " 실제 계산해야할 금액 = " + orderPriceCheck );
+//
+//        if(orderPriceCheck == totalPrice) {
+//            orderService.order(cartList, orderInfo, user, session);
+//            session.removeAttribute("cartList");
+//        }
+//
+//        return new ResponseEntity<>( HttpStatus.OK);
+//    }
 
 //    @GetMapping("/orderList")
 //    public String orderList(@AuthenticationPrincipal LoginService user, Model model) {

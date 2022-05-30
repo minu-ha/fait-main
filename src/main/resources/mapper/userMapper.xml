@@ -10,14 +10,13 @@
         where ${valueType } = #{value }
     </select>
 
-
     <insert id="join">
-        insert into BM_USER (ID,
+        insert into BM_USER ()ID,
                              USERNAME,
                              PASSWORD,
                              EMAIL,
                              NICKNAME,
-                             PHONE)
+                             PHONE
         values (USER_ID_SEQ.NEXTVAL,
                 #{username },
                 #{password },
@@ -45,6 +44,5 @@
                     U.ID = P.USER_ID
         WHERE U.USERNAME = #{username }
     </select>
-
 
 </mapper>
