@@ -1,4 +1,4 @@
-package com.flab.shoeauction.exception.file;
+package kr.kro.faitmain.exception.file;
 
 public class IllegalMimeTypeException extends IllegalArgumentException {
 

@@ -1,4 +1,4 @@
-package com.flab.shoeauction.exception.brand;
+package kr.kro.faitmain.exception.brand;
 
 public class DuplicateBrandNameException extends IllegalArgumentException {
 

@@ -1,4 +1,4 @@
-package com.flab.shoeauction.exception.smsCetification;
+package kr.kro.faitmain.exception.smsCetification;
 
 public class SmsSendFailedException extends RuntimeException{
 }

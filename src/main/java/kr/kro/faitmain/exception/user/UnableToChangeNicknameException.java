@@ -1,4 +1,4 @@
-package com.flab.shoeauction.exception.user;
+package kr.kro.faitmain.exception.user;
 
 public class UnableToChangeNicknameException extends RuntimeException {
 
