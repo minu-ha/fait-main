@@ -13,11 +13,11 @@ import java.util.List;
 @RestController
 public class TestRestController{
 
-    @Autowired
-    private TestDao testDao;
-
-    @RequestMapping( "/hello" )
-    public List< TestDto> getTestVAlue(){
-        return testDao.getTestData();
-    }
+//    @Autowired
+//    private TestDao testDao;
+//
+//    @RequestMapping( "/hello" )
+//    public List< TestDto> getTestVAlue(){
+//        return testDao.getTestData();
+//    }
 }

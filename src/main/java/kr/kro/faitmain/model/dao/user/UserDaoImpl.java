@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 
-@Repository
+//@Repository
 public class UserDaoImpl implements UserDao{
 
     @Autowired
