@@ -1,4 +1,4 @@
-package com.flab.shoeauction.exception.trade;
+package kr.kro.faitmain.exception.order;
 
 public class LowPointException extends RuntimeException {
 
