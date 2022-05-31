@@ -5,9 +5,8 @@ import java.util.Date;
 import lombok.Data;
 
 @Data
-public class LiveVoucher {
-	private int voucherNumber;
+public class LiveReservation {
+	private int liveReservationNumber;
 	private String storeId;
-	private Date effectiveDate;
-	private Date dueDate;
+	private Date reservationDate;
 }
